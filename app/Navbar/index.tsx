@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -81,8 +80,6 @@ const Header = () => {
             </span>
           </button>
         </div>
-
-        {/* Nav Menu Start   */}
         <div
           className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
             navigationOpen &&
@@ -110,7 +107,6 @@ const Header = () => {
                           </svg>
                         </span>
                       </button>
-
                       <ul
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
@@ -139,7 +135,6 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
           </div>
         </div>
