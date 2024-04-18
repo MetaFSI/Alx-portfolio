@@ -16,8 +16,8 @@ export default function Home() {
       <div className='grid mdgrid-cols-2 gap-3 m-3'>
         {projectsX.map((item:any, key:any) => (
           <div key={key} className='bg-gray-200 p-3 rounded-lg'>
-            <h1 className='text-white text-xl'>{item.name}</h1>
-            <p className='text-gray-400'>{item.description}</p>
+            <h1 className='text-gray-800 text-xl font-semibold py-3'>{item.name}</h1>
+            <p className='text-gray-600'>{item.description}</p>
             <div className='flex gap-3 my-2'>
               {item.skills.map((itemX:any, keyX:any) => (
                 <span key={keyX} className='bg-white px-2 rounded-lg shadow-inner'>{itemX}</span>
